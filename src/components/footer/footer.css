@@ -1,0 +1,36 @@
+footer {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2%;
+    padding: 3rem 0;
+    text-align: center;
+    margin-top: 3rem;
+    color: aliceblue;
+    
+}
+.footer-menu a{
+    display: flex;
+    flex-direction: column;
+    text-decoration: none; 
+    color: aliceblue; 
+}
+
+.footer-logo{
+    text-decoration: none;
+    color: aliceblue;
+    display: inline-block;
+    margin-bottom: 1rem;
+    font-size: 2rem;
+}
+/* .footer-socials a {
+    display: flex;
+    flex-direction: row;
+    text-decoration: none;
+    color: aliceblue;
+} */
+.social-icon {
+    text-decoration: none;
+    color: aliceblue;
+    font-size: 2rem;
+    padding-right: 2rem;
+}
