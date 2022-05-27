@@ -65,9 +65,9 @@ const Home = () => {
                     <Link to={`/update/${item._id}`}>
                       <button className="btn btn-dark ">Update Stock</button>
                     </Link>
-                    <Link to={`/update/${item._id}`}>
+                    {/* <Link to={`/update/${item._id}`}>
                       <button className="btn btn-dark">Deliver</button>
-                    </Link>
+                    </Link> */}
                   </Card.Body>
                 </Card>
               </div>
@@ -75,6 +75,11 @@ const Home = () => {
           </div>
         </div>
       </div>
+      <Link to="inventory">
+        <div className="d-flex justify-content-center">
+          <button className="btn btn-dark">Manage Inventory</button>
+        </div>
+      </Link>
     </>
   );
 };

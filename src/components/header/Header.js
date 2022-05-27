@@ -40,10 +40,12 @@ const Header = () => {
                   Add item
                 </Nav.Link>
               )}
+              {user && (
+                <Nav.Link as={Link} to="inventory">
+                  Inventory
+                </Nav.Link>
+              )}
 
-              <Nav.Link as={Link} to="inventory">
-                Inventory
-              </Nav.Link>
               <Nav.Link as={Link} to="myPage">
                 My Page
               </Nav.Link>
