@@ -1,0 +1,11 @@
+.summery-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap:20px
+}
+.icon {
+    text-decoration: none;
+    color: goldenrod;
+    font-size: 3rem;
+    /* padding-right: 2rem; */
+}

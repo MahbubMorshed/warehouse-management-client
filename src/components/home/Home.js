@@ -3,6 +3,7 @@ import { Card, Col, ListGroup, ListGroupItem } from "react-bootstrap";
 import { Link } from "react-router-dom";
 import "../inventory/inventory.css";
 import laptop from "../../images/laptop.jpg";
+import Summery from "../summery/Summery";
 
 const Home = () => {
   const [items, setItems] = useState([]);
@@ -79,6 +80,7 @@ const Home = () => {
           <button className="btn btn-dark">Manage Inventory</button>
         </div>
       </Link>
+      <Summery />
     </>
   );
 };
