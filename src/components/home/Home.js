@@ -1,4 +1,3 @@
-import { Carousel } from "bootstrap";
 import React, { useEffect, useState } from "react";
 import { Card, Col, ListGroup, ListGroupItem } from "react-bootstrap";
 import { Link } from "react-router-dom";
@@ -76,7 +75,7 @@ const Home = () => {
         </div>
       </div>
       <Link to="inventory">
-        <div className="d-flex justify-content-center">
+        <div className="d-flex justify-content-center mt-4">
           <button className="btn btn-dark">Manage Inventory</button>
         </div>
       </Link>

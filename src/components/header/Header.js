@@ -35,11 +35,11 @@ const Header = () => {
               <Nav.Link as={Link} to="blog">
                 Blog
               </Nav.Link>
-              {user && (
+              {/* {user && (
                 <Nav.Link as={Link} to="addItem">
                   Add item
                 </Nav.Link>
-              )}
+              )} */}
               {user && (
                 <Nav.Link as={Link} to="inventory">
                   Inventory
