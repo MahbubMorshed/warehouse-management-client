@@ -6,39 +6,52 @@ import "./summery.css";
 
 const Summery = () => {
   return (
-    <div className="container mt-5 bg-dark mb-5 pb-5">
+    <div className="container mt-5 mb-5 pb-5">
       <h1 className="text-center mb-5 text-white">
         Millions Of Business Trusted
       </h1>
-      <div className="summery-container">
-        <div className="card">
-          <div className="icon text-center">
-            <FaAward />
-          </div>
-          <div className="card-body">
-            <p className="card-text text-center fw-bold fs-5">
-              Top selling awards
-            </p>
-          </div>
-        </div>
-        <div className="card">
-          <div className="icon text-center">
-            <VscFeedback />
-          </div>
-          <div className="card-body">
-            <p className="card-text text-center fw-bold fs-5">
-              Millions of satisfied users feedback
-            </p>
+      <div className="row p-5">
+        <div className="col-md">
+          <div className="card bg-dark text-light">
+            <div className="card-body text-center">
+              <div className="h1 mb-3">
+                <FaAward className="icon" />
+              </div>
+              <h3 className="card-title mb-3">Awards</h3>
+              <p className="card-text">
+                Top selling Top selling Top selling Top selling Top selling Top
+                selling Top selling Top selling Top selling Top sellingTop
+                selling
+              </p>
+            </div>
           </div>
         </div>
-        <div className="card">
-          <div className="icon text-center">
-            <BsBarChartLineFill />
+        <div className="col-md">
+          <div className="card bg-dark text-light">
+            <div className="card-body text-center">
+              <div className="h1 mb-3">
+                <VscFeedback className="icon" />
+              </div>
+              <h3 className="card-title mb-3">Feedback</h3>
+              <p className="card-text">
+                Millions of satisfied users feedbackMillions of satisfied users
+                feedbackMillions of satisfied users feedback
+              </p>
+            </div>
           </div>
-          <div className="card-body">
-            <p className="card-text text-center fw-bold fs-5">
-              100+ millions yearly revenue
-            </p>
+        </div>
+        <div className="col-md">
+          <div className="card bg-dark text-light">
+            <div className="card-body text-center">
+              <div className="h1 mb-3">
+                <BsBarChartLineFill className="icon" />
+              </div>
+              <h3 className="card-title mb-3">Revenue</h3>
+              <p className="card-text">
+                100+ millions yearly revenue 100+ millions yearly revenue100+
+                millions yearly revenue 100+ millions yearly revenue
+              </p>
+            </div>
           </div>
         </div>
       </div>
