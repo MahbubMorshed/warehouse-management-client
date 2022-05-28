@@ -45,14 +45,13 @@ const Home = () => {
         </div>
       </div>
       <div className="container" id="inventory">
-        <h1 className="text-center mb-5">Accessories</h1>
         <div className="row">
           <div className="inventory-container">
             {items.map((item) => (
               <div key={item._id}>
                 {/* <button onClick={() => handleItemDelete(item._id)}>X</button> */}
 
-                <Card style={{ width: "18rem" }}>
+                <Card style={{ width: "18rem" }} className="bg-dark text-white">
                   <Card.Img variant="top" src={item.image} />
                   <Card.Body>
                     <Card.Title>{item.name}</Card.Title>

@@ -37,42 +37,40 @@ const Inventory = () => {
         </div>
       </Link>
       <div className="container" id="inventory">
-        <h2>Inventory</h2>
+        <h2 className="text-center mb-5">Inventory</h2>
 
-        <div className="row">
-          <div className="inventory-container">
-            {items.map((item) => (
-              <div key={item._id}>
-                {/* <button onClick={() => handleItemDelete(item._id)}>X</button> */}
+        <div className="inventory-container">
+          {items.map((item) => (
+            <div key={item._id}>
+              {/* <button onClick={() => handleItemDelete(item._id)}>X</button> */}
 
-                <Card style={{ width: "18rem" }}>
-                  <Card.Img variant="top" src={item.image} />
-                  <Card.Body>
-                    <Card.Title>{item.name}</Card.Title>
-                    <Card.Text>{item.description}</Card.Text>
-                  </Card.Body>
-                  <ListGroup className="list-group-flush">
-                    <ListGroupItem>Price: {item.price}</ListGroupItem>
-                    <ListGroupItem>Quantity: {item.quantity}</ListGroupItem>
-                    <ListGroupItem>Supplier: {item.supplierName}</ListGroupItem>
-                  </ListGroup>
-                  <Card.Body className="d-flex justify-content-between">
-                    <Link to={`/update/${item._id}`}>
-                      <button className="btn btn-dark ">Update Stock</button>
-                    </Link>
-                    <Link to={`/update/${item._id}`}>
-                      <button
-                        onClick={() => handleItemDelete(item._id)}
-                        className="btn btn-dark"
-                      >
-                        Remove Items
-                      </button>
-                    </Link>
-                  </Card.Body>
-                </Card>
-              </div>
-            ))}
-          </div>
+              <Card style={{ width: "18rem" }} className="bg-dark text-white">
+                <Card.Img variant="top" src={item.image} />
+                <Card.Body>
+                  <Card.Title>{item.name}</Card.Title>
+                  <Card.Text>{item.description}</Card.Text>
+                </Card.Body>
+                <ListGroup className="list-group-flush">
+                  <ListGroupItem>Price: {item.price}</ListGroupItem>
+                  <ListGroupItem>Quantity: {item.quantity}</ListGroupItem>
+                  <ListGroupItem>Supplier: {item.supplierName}</ListGroupItem>
+                </ListGroup>
+                <Card.Body className="d-flex justify-content-between">
+                  <Link to={`/update/${item._id}`}>
+                    <button className="btn btn-light ">Update Stock</button>
+                  </Link>
+                  <Link to={`/update/${item._id}`}>
+                    <button
+                      onClick={() => handleItemDelete(item._id)}
+                      className="btn btn-light"
+                    >
+                      Remove Items
+                    </button>
+                  </Link>
+                </Card.Body>
+              </Card>
+            </div>
+          ))}
         </div>
       </div>
     </>
