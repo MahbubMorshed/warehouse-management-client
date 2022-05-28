@@ -6,12 +6,12 @@ import "./summery.css";
 
 const Summery = () => {
   return (
-    <div className="container mt-5 mb-5 pb-5">
+    <div className="container mt-5 mb-5 pb-5 ">
       <h1 className="text-center mb-5 text-white">
         Millions Of Business Trusted
       </h1>
       <div className="row p-5">
-        <div className="col-md">
+        <div className="col-md mb-3">
           <div className="card bg-dark text-light">
             <div className="card-body text-center">
               <div className="h1 mb-3">
@@ -26,8 +26,8 @@ const Summery = () => {
             </div>
           </div>
         </div>
-        <div className="col-md">
-          <div className="card bg-dark text-light">
+        <div className="col-md mb-3">
+          <div className="card bg-secondary text-light">
             <div className="card-body text-center">
               <div className="h1 mb-3">
                 <VscFeedback className="icon" />
@@ -40,7 +40,7 @@ const Summery = () => {
             </div>
           </div>
         </div>
-        <div className="col-md">
+        <div className="col-md mb-3">
           <div className="card bg-dark text-light">
             <div className="card-body text-center">
               <div className="h1 mb-3">

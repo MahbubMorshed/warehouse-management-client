@@ -3,7 +3,7 @@ import { Accordion } from "react-bootstrap";
 
 const Blog = () => {
   return (
-    <div className="container w-75 min-vh-100">
+    <div className="container  w-75 min-vh-100">
       <Accordion defaultActiveKey="0" flush>
         <Accordion.Item eventKey="0">
           <Accordion.Header>
