@@ -6,8 +6,10 @@ import "./summery.css";
 
 const Summery = () => {
   return (
-    <div className="mt-5">
-      <h1 className="text-center mb-5">Millions Of Business Trusted</h1>
+    <div className="container mt-5 bg-dark mb-5 pb-5">
+      <h1 className="text-center mb-5 text-white">
+        Millions Of Business Trusted
+      </h1>
       <div className="summery-container">
         <div className="card">
           <div className="icon text-center">

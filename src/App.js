@@ -14,6 +14,7 @@ import RequireAuth from "./components/requireAuth/RequireAuth";
 import Footer from "./components/footer/Footer";
 import Blog from "./components/blog/Blog";
 import Summery from "./components/summery/Summery";
+import Contact from "./components/contact-us/Contact";
 
 function App() {
   return (
@@ -36,6 +37,7 @@ function App() {
         <Route path="inventory" element={<Inventory />}></Route>
         <Route path="socialLogin" element={<SocialLogin />}></Route>
         <Route path="summery" element={<Summery />}></Route>
+        <Route path="contact" element={<Contact />}></Route>
 
         <Route
           path="update/:id"

@@ -33,13 +33,18 @@ const UpdateItem = () => {
       });
   };
   return (
-    <div>
-      <h2>Update Items quantity: {item.quantity}</h2>
+    <div className="container text-center">
+      <h2>Stock Available: {item.quantity}</h2>
       <form onSubmit={handleUpdateStock}>
-        <input type="number" name="quantity" placeholder="Quantity" />
+        <input
+          type="number"
+          className="form-control w-50 mx-auto"
+          name="quantity"
+          placeholder="Update Stock"
+        />
         <br />
 
-        <input type="submit" value="Update Item" />
+        <input type="submit" className="btn btn-dark" value="Update Item" />
       </form>
     </div>
   );

@@ -4,6 +4,7 @@ import { Link } from "react-router-dom";
 import "../inventory/inventory.css";
 import laptop from "../../images/laptop.jpg";
 import Summery from "../summery/Summery";
+import Contact from "../contact-us/Contact";
 
 const Home = () => {
   const [items, setItems] = useState([]);
@@ -33,7 +34,7 @@ const Home = () => {
   };
   return (
     <>
-      <div className="container">
+      <div className="container mt-5 mb-5">
         <div className="row">
           <div className="col  my-auto">
             <h1 className="text-start">Choose your next Laptop</h1>
@@ -44,6 +45,7 @@ const Home = () => {
         </div>
       </div>
       <div className="container" id="inventory">
+        <h1 className="text-center mb-5">Accessories</h1>
         <div className="row">
           <div className="inventory-container">
             {items.map((item) => (
@@ -81,6 +83,7 @@ const Home = () => {
         </div>
       </Link>
       <Summery />
+      <Contact />
     </>
   );
 };
