@@ -42,24 +42,41 @@ const Register = () => {
   };
 
   return (
-    <div className="register-form">
+    <div className="register-form container w-50 mx-auto mt-2">
       <h2 className="text-center text-dark">Please Register</h2>
       <form onSubmit={handleRegister}>
-        <input type="text" name="name" placeholder="Your Name" />
-        <input type="email" name="email" placeholder="Your Email" />
-        <input type="password" name="password" placeholder="Password" />
+        <input
+          type="text"
+          className="form-control w-50 mx-auto mb-3"
+          name="name"
+          placeholder="Your Name"
+        />
+        <input
+          type="email"
+          className="form-control w-50 mx-auto mb-3"
+          name="email"
+          placeholder="Your Email"
+        />
+        <input
+          type="password"
+          className="form-control w-50 mx-auto mb-3"
+          name="password"
+          placeholder="Password"
+        />
         <input
           onClick={() => setAgree(!agree)}
           type="checkbox"
           name="terms"
           id="terms"
         />
-        <label className={agree ? "ps-2 text-dark" : "ps-2 text-primary"}>
+        <label
+          className={agree ? "ps-2 text-dark" : "ps-2 text-primary text-center"}
+        >
           Accept computer source term and condition
         </label>
         <input
           disabled={!agree}
-          className="btn btn-dark w-50 mx-auto mt-2"
+          className="btn btn-dark w-50 mx-auto d-block mb-2"
           type="submit"
           value="register"
         />
