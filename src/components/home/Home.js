@@ -78,7 +78,7 @@ const Home = () => {
                   </ListGroup>
                   <Card.Body className="d-flex justify-content-between">
                     <Link to={`/update/${item._id}`}>
-                      <button className="btn btn-dark ">Update Stock</button>
+                      <button className="btn btn-light ">Update Stock</button>
                     </Link>
                     {/* <Link to={`/update/${item._id}`}>
                       <button className="btn btn-dark">Deliver</button>
