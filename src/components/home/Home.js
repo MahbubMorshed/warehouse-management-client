@@ -1,8 +1,12 @@
 import React, { useEffect, useState } from "react";
-import { Card, Col, ListGroup, ListGroupItem } from "react-bootstrap";
+import { Card, Carousel, Col, ListGroup, ListGroupItem } from "react-bootstrap";
 import { Link } from "react-router-dom";
 import "../inventory/inventory.css";
-import laptop from "../../images/laptop.jpg";
+import laptop3 from "../../images/laptop3.jpg";
+import laptop4 from "../../images/laptop4.jpg";
+import laptop6 from "../../images/laptop6.jpg";
+import laptop7 from "../../images/laptop7.jpg";
+import laptop9 from "../../images/laptop9.jpg";
 import Summery from "../summery/Summery";
 import Contact from "../contact-us/Contact";
 
@@ -34,16 +38,26 @@ const Home = () => {
   };
   return (
     <>
-      <div className="container mt-5 mb-5">
-        <div className="row">
-          <div className="col  my-auto">
-            <h1 className="text-start">Choose your next Laptop</h1>
-          </div>
-          <div className="col">
-            <img src={laptop} />
-          </div>
-        </div>
+      <div className="mb-5">
+        <Carousel fade controls={false} indicators={false} interval={2000}>
+          <Carousel.Item>
+            <img className="d-block w-100" src={laptop3} alt="First slide" />
+          </Carousel.Item>
+          <Carousel.Item>
+            <img className="d-block w-100" src={laptop4} alt="Second slide" />
+          </Carousel.Item>
+          <Carousel.Item>
+            <img className="d-block w-100" src={laptop6} alt="Third slide" />
+          </Carousel.Item>
+          <Carousel.Item>
+            <img className="d-block w-100" src={laptop7} alt="Third slide" />
+          </Carousel.Item>
+          <Carousel.Item>
+            <img className="d-block w-100" src={laptop9} alt="Third slide" />
+          </Carousel.Item>
+        </Carousel>
       </div>
+
       <div className="container" id="inventory">
         <div className="row">
           <div className="inventory-container">
